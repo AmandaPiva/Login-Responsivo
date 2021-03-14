@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif ;
+}
+
+body{
+    background: #1C1C1C;
+    color:white;
+    font-weight: 300;
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+main{
+    width: 50vw;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3rem;
+    padding: 2rem, 4rem;
+}
+
+main h1{
+    color: #5c4688;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+main .social-media{
+    display: flex;
+    align-content: center;
+}
+
+main .social-media a{
+    text-decoration: none;
+}
+
+main .social-media img{
+    width: 36px;
+    margin-left: 3rem;
+}
+
+main form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form label{
+    display: flex;
+    flex-direction: column;
+}
+
+main .social-media a:first-child img{
+    margin-left: 0;
+    margin-bottom: 2rem;
+}
+
+main label span{
+    font-size: 1.1rem;
+    margin-top: 2rem;
+}
+
+main .alternative span{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top:2rem;
+    color: #5c4688;
+    position: relative;
+}
+
+main .alternative span::before{ 
+    position: absolute;
+    height: 2px;
+    width: 100px;
+    content:'';
+    background: #5c4688;
+    bottom: 50%;
+    right: 50px;
+}
+
+main .alternative span::after{
+    position: absolute;
+    height: 2px;
+    width: 100px;
+    content:'';
+    background: #5c4688;
+    bottom: 50%;
+    left: 50px;
+
+}
+
+main label input{
+    background:#0f0f0f ;
+    margin-top: 1rem;
+    width: 300px;
+    height: 50px;
+    color: #a1a0a0;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 0 0.5rem;
+    outline: none;
+    border-radius: 8px;
+}
+
+main form input[type="submit"]{
+    margin-top: 3rem;
+    width: 200px;
+    height: 35px;
+    background:#5c4688;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+section.image{
+    display: flex;
+    align-items:flex-end ; /*"flex-end" ajusta os elementos no sinal da pagina*/
+    justify-content: flex-end;
+    padding: 4rem;
+    width: 50vw;
+    
+}
+
+section.image img{
+    height: 75%;
+    width: 150%;
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px){
+ 
+    section.image img{
+        width: 110%;
+    }   
+}
+
+
+@media only screen and (max-width: 900px){
+    
+    section.image img{
+        display: none;
+        visibility: hidden;
+    }   
+       
+}
+
+@media only screen and (max-width: 900px){
+    
+ 
+main{
+    width: 100%;
+    padding: 2.6rem;
+
+}  
+             
+}
+
+@media only screen and (max-width: 900px){
+    main h1{
+        color: #1f7e51; 
+    }      
+}
+
+@media only screen and (max-width: 900px){
+
+    main .alternative span{
+       
+        color: #1f7e51;
+        
+    }
+    
+    main .alternative span::before{ 
+        background:#1f7e51;
+    
+    }
+    
+    main .alternative span::after{
+        background: #1f7e51;
+    }
+    
+    @media only screen and (max-width: 900px){
+
+        main form input[type="submit"]{
+            background: #1f7e51;
+        }
+
+    }
+}
